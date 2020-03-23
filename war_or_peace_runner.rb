@@ -36,8 +36,7 @@ suits.each {|suit|
   player1 = Player.new('Huxley', deck1)
   player2 = Player.new('Petra', deck2)
 
-  game = Game.new(player1, player2)
-  game.start_game
+
 
 class Game
   attr_reader :player1, :player2, :turn_count
@@ -93,3 +92,7 @@ class Game
 
 
 end
+
+game = Game.new(player1, player2)
+game.start_game
+game.play_game
